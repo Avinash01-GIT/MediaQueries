@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.item-1{
+  height: 30%;
+}
+
+.item-2 {
+  height: 70%;
+  background-color: #FFC72C;
+}
+
+.item-3 {
+  height: 66%;
+  width: 27%;
+  position: absolute;
+  top: 17%;
+  left: 12%;
+  background-image: url(./assets/Cup-coffee.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.item-4 {
+  height: 60%;
+  width: 40%;
+  position: absolute;
+  top: 33%;
+  right: 18%;
+  text-align: center;
+  color: #27251F;
+}
+
+.item-4 p {
+  margin-top: 7%;
+}
+
+.item-4 a {
+  text-decoration: underline;
+  color: black;
+}
+
+.item-4 button {
+  width: 250px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    margin: 15px auto;
+    padding: 20px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .item-4 p {
+    font-size: 18px;
+  }
+  button{
+    width: 150px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    margin: 8px auto;
+    padding: 8px 8px;
+}
+}
+
+@media only screen and (max-width: 320px) {
+  
+  .item-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 35%;
+    top: 5%;
+  }  
+  
+  .item-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 80%;
+    height: 100%;
+    transform: translateX(-50%);
+    flex-flow: column;
+  }
+  
+  button{
+    width: 200px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    margin: 10px auto;
+    padding: 8px 8px;
+  }
+}
